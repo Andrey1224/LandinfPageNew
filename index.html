@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Consulting - Expert Support for Your Growth</title>
+    <meta name="description" content="Professional consulting services to help launch and grow your business fast. Training, mentoring, and support from expert consultants.">
+    <meta property="og:title" content="Business Consulting - Expert Support for Your Growth">
+    <meta property="og:description" content="Professional consulting services to help launch and grow your business fast. Training, mentoring, and support from expert consultants.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/branding/og-image.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/branding/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/branding/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/branding/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/branding/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/branding/logo.png" alt="Business Consulting" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <h1 style="display: none;">Business Consulting</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <span class="cart-symbol">🛒</span>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Helping you launch and grow your business — fast and with expert support</h2>
+                    <p>Consulting, training, and mentoring — choose the right product and start seeing results within the first month. All in one place.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                        <a href="#products" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h3>About Our Company</h3>
+                <p>We help entrepreneurs and business owners accelerate their growth through proven strategies, expert guidance, and practical tools. Our mission is to provide accessible, results-driven consulting that delivers measurable outcomes within the first month.</p>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container">
+                <h3>Our Services</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-product-id="1">
+                        <div class="product-image">
+                            <img src="images/products/subscription.jpg" alt="Monthly Business Support" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">📊</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Monthly Subscription "Business Support & Consulting"</h4>
+                            <div class="price">$250</div>
+                            <p>Ongoing expert support to help manage and scale your business.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-product-id="2">
+                        <div class="product-image">
+                            <img src="images/products/training.jpg" alt="Online Training Conference" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">🎓</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Online Training Conference on Client Acquisition</h4>
+                            <div class="price">$500</div>
+                            <p>Practical workshop with guest experts, including recording and handouts.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-product-id="3">
+                        <div class="product-image">
+                            <img src="images/products/strategy.jpg" alt="Strategy Session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">💡</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>1-on-1 Strategy Session (1 hour)</h4>
+                            <div class="price">$150</div>
+                            <p>In-depth review of your business case, identifying growth opportunities and creating an action plan.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-product-id="4">
+                        <div class="product-image">
+                            <img src="images/products/checklist.jpg" alt="Quick Start Checklist" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">✅</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Checklist: "Quick Start — How to Launch a Business in 7 Days"</h4>
+                            <div class="price">$80</div>
+                            <p>A practical guide with templates and step-by-step instructions.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-product-id="5">
+                        <div class="product-image">
+                            <img src="images/products/mentorship.jpg" alt="Mentorship Program" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">🤝</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>One-Month Mentorship with an Expert</h4>
+                            <div class="price">$300</div>
+                            <p>Weekly support via Zoom + Telegram, including Q&A and personalized advice.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(5)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-product-id="6">
+                        <div class="product-image">
+                            <img src="images/products/review.jpg" alt="Website Review" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">🔍</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Website or Landing Page Review (video + PDF)</h4>
+                            <div class="price">$120</div>
+                            <p>Feedback on structure, USP, and design with actionable recommendations.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(6)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-product-id="7">
+                        <div class="product-image">
+                            <img src="images/products/business-plan.jpg" alt="Business Plan Template" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="image-placeholder" style="display: none;">📋</div>
+                        </div>
+                        <div class="product-content">
+                            <h4>Business Plan Template & Review</h4>
+                            <div class="price">$200</div>
+                            <p>Professional business plan template with expert review and feedback.</p>
+                            <button class="btn btn-primary add-to-cart" onclick="addToCart(7)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4>How quickly can I see results?</h4>
+                    <p>Most clients start seeing measurable improvements within the first month of implementing our strategies and recommendations.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you work with startups or only established businesses?</h4>
+                    <p>We work with both startups and established businesses. Our services are tailored to your specific stage of growth and needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's included in the mentorship program?</h4>
+                    <p>The mentorship includes weekly Zoom calls, ongoing Telegram support, personalized advice, and access to our resource library.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I combine multiple services?</h4>
+                    <p>Absolutely! Many clients find success by combining our training sessions with ongoing mentorship for maximum impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h3>Get In Touch</h3>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Phone:</strong> <a href="tel:+17473507682">+1 (747) 350-7682</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong> <a href="mailto:nkconsultla@gmail.com">nkconsultla@gmail.com</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="sendEmail(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <input type="text" name="honeypot" style="display: none;">
+                        <button type="submit" class="btn btn-primary">Send Email</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" onclick="showPlaceholder('Terms of Service')">Terms</a>
+                    <a href="#" onclick="showPlaceholder('Privacy Policy')">Privacy</a>
+                    <a href="#" onclick="showPlaceholder('Refund Policy')">Refund</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Business Consulting. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-total">
+            <div class="total-price" id="total-price">Total: $0</div>
+            <button class="btn btn-primary checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
