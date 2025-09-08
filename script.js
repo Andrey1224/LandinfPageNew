@@ -1,11 +1,11 @@
 const products = {
-    1: { name: 'Monthly Subscription "Business Support & Consulting"', price: 250 },
-    2: { name: 'Online Training Conference on Client Acquisition', price: 500 },
-    3: { name: '1-on-1 Strategy Session (1 hour)', price: 150 },
-    4: { name: 'Checklist: "Quick Start — How to Launch a Business in 7 Days"', price: 80 },
-    5: { name: 'One-Month Mentorship with an Expert', price: 300 },
-    6: { name: 'Website or Landing Page Review (video + PDF)', price: 120 },
-    7: { name: 'Business Plan Template & Review', price: 200 }
+    1: { name: 'Monthly Subscription Business Consulting', price: 250 },
+    2: { name: 'Online Training Conference on Client Acquisition for Business', price: 500 },
+    3: { name: 'Lifetime Subscription Services', price: 750 },
+    4: { name: '1-on-1 Strategy Session (1 hour)', price: 150 },
+    5: { name: 'Checklist: "Quick Start — How to Launch a Business in 7 Days"', price: 80 },
+    6: { name: 'One-Month Mentorship with an Expert', price: 300 },
+    7: { name: 'Website or Landing Page Review (video + PDF)', price: 120 }
 };
 
 let cart = [];
